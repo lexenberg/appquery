@@ -17,6 +17,19 @@
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script src="js/gauge.min.js"></script>
 		<script src="js/maps.js"></script>
+		
+		<script>
+		$(function() {
+			  setTimeout(hideSplash, 3000);
+			});
+
+			function hideSplash() {
+			  $.mobile.changePage("#principal", "fade");
+			}
+
+		
+		</script>
+		
 		<script>
 				/*
 				 * Google Maps documentation: http://code.google.com/apis/maps/documentation/javascript/basics.html
@@ -134,6 +147,13 @@
 
 <!----------------------------------------------  Inicio PAGINA 1 HOME ----------------------------------------------------->
 
+		<div data-role="page" data-theme="b" id="splash" style="background-color: #fff;"> 
+			    <div class="splash">
+			        <img src="img/logoait.png" alt="splash" style="width: 40%;"/>
+			    </div>
+		</div>
+		
+		
 		<div data-role="page" class="jqm-demos jqm-home" id="principal">
 
 		<div data-role="header" class="jqm-header">
